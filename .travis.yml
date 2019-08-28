@@ -2,5 +2,14 @@ dist: trusty
 language: node_js
 node_js:
 - stable
+node_js:
+- stable
+notifications:
+    email:
+        recipients:
+        - pankajsharma1122@gmail.com      # change to your own address
+        - k344@sunlife.com    # use other (optional)
+        on_success: always        # default: change
+        on_failure: always       # default: always
 script:
 - npm run build
